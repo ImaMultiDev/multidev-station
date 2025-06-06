@@ -1,12 +1,8 @@
 import Link from "next/link";
-import Header from "@/components/Ui/Header";
-import Footer from "@/components/Footer";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-surface to-background flex flex-col">
-      <Header />
-
+    <div className="flex flex-col min-h-screen bg-gradient-to-br from-background via-surface to-background">
       <main className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="mb-8">
@@ -61,8 +57,6 @@ export default function NotFound() {
           </div>
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 }

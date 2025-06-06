@@ -1,7 +1,6 @@
-export default function IosIcon({ className }: { className?: string }) {
+export default function LightningIcon({ className }: { className?: string }) {
   return (
     <svg
-      //className="w-8 h-8"
       className={className}
       fill="none"
       stroke="currentColor"
@@ -11,7 +10,7 @@ export default function IosIcon({ className }: { className?: string }) {
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
-        d="M12 18h.01M8 21h8a1 1 0 001-1V4a1 1 0 00-1-1H8a1 1 0 00-1 1v16a1 1 0 001 1z"
+        d="M13 10V3L4 14h7v7l9-11h-7z"
       />
     </svg>
   );

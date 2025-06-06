@@ -1,6 +1,6 @@
+import { projectTypes } from "@/constants/projectTypes";
+import ProjectDetail from "@/views/ProjectDetail";
 import { notFound } from "next/navigation";
-import ProjectDetail from "@/app/views/ProjectDetail";
-import { projectTypes } from "@/app/constants/projectTypes";
 
 interface ProjectPageProps {
   params: Promise<{
@@ -10,7 +10,7 @@ interface ProjectPageProps {
 
 export async function generateStaticParams() {
   return projectTypes.map((project) => ({
-    id: project.id
+    id: project.id,
   }));
 }
 
@@ -20,13 +20,13 @@ export async function generateMetadata({ params }: ProjectPageProps) {
 
   if (!project) {
     return {
-      title: "Proyecto no encontrado - Multidev Station"
+      title: "Proyecto no encontrado - Multidev Station",
     };
   }
 
   return {
     title: `${project.title} - Multidev Station`,
-    description: project.description
+    description: project.description,
   };
 }
 

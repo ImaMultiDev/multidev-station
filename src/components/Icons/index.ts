@@ -6,6 +6,9 @@ import MobileIcon from "./MobileIcon";
 import WebIcon from "./WebIcon";
 import OtherIcon from "./OtherIcon";
 import ExpandIcon from "./ExpandIcon";
+import LightningIcon from "./LightningIcon";
+import ShieldIcon from "./ShieldIcon";
+import HeartIcon from "./HeartIcon";
 
 export {
   AndroidIcon,
@@ -16,4 +19,10 @@ export {
   WebIcon,
   OtherIcon,
   ExpandIcon,
+  LightningIcon,
+  ShieldIcon,
+  HeartIcon,
 };
+
+// Export the main Icon component
+export { Icon } from "./Icon";

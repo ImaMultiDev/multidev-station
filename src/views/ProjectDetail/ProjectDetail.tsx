@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { projectsData, Technology } from "@/constants/projectData";
-import { Icon } from "@/components/Icons/Icon";
+import { Icon } from "@/components/Icons";
 import { ExpandIcon } from "@/components/Icons";
 
 interface ProjectDetailProps {
@@ -161,10 +161,10 @@ function TechnologyCard({ tech }: { tech: Technology }) {
   );
 }
 
+type TabType = "technologies" | "roadmap" | "resources";
+
 export default function ProjectDetail({ project }: ProjectDetailProps) {
-  const [activeTab, setActiveTab] = useState<
-    "technologies" | "roadmap" | "resources"
-  >("technologies");
+  const [activeTab, setActiveTab] = useState<TabType>("technologies");
 
   // Buscar los datos detallados del proyecto
   const detailedProject = projectsData.find((p) => p.id === project.id);
@@ -186,7 +186,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-surface to-background">
+    <div className="bg-gradient-to-br from-background via-surface to-background">
       {/* Hero Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -234,24 +234,24 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
             <nav className="flex space-x-8">
               {[
                 {
-                  id: "technologies",
+                  id: "technologies" as TabType,
                   label: "Tecnologías",
                   count: detailedProject.technologies.length,
                 },
                 {
-                  id: "roadmap",
+                  id: "roadmap" as TabType,
                   label: "Roadmap",
                   count: detailedProject.roadmap.length,
                 },
                 {
-                  id: "resources",
+                  id: "resources" as TabType,
                   label: "Recursos",
                   count: detailedProject.resources.length,
                 },
               ].map((tab) => (
                 <button
                   key={tab.id}
-                  onClick={() => setActiveTab(tab.id as any)}
+                  onClick={() => setActiveTab(tab.id)}
                   className={`py-4 px-1 border-b-2 font-medium text-sm transition-colors ${
                     activeTab === tab.id
                       ? "border-primary text-primary"

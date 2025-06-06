@@ -1,4 +1,4 @@
-import { Icon } from "@/app/components/Icons/Icon";
+import { Icon } from "@/components/Icons";
 
 interface Feature {
   icon: string;

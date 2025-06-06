@@ -1,7 +1,6 @@
-export default function MobileIcon({ className }: { className?: string }) {
+export default function HeartIcon({ className }: { className?: string }) {
   return (
     <svg
-      //className="w-8 h-8"
       className={className}
       fill="none"
       stroke="currentColor"
@@ -11,7 +10,7 @@ export default function MobileIcon({ className }: { className?: string }) {
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
-        d="M12 18h.01M8 21h8a1 1 0 001-1V4a1 1 0 00-1-1H8a1 1 0 00-1 1v16a1 1 0 001 1z"
+        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
       />
     </svg>
   );
