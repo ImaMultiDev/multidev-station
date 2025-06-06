@@ -1,0 +1,59 @@
+import {
+  AndroidIcon,
+  ApiIcon,
+  GameIcon,
+  IosIcon,
+  MobileIcon,
+  WebIcon,
+} from "../components/Icons";
+
+export const projectTypes = [
+  {
+    id: "web",
+    title: "Aplicación Web",
+    description: "Desarrollo de aplicaciones web modernas y responsive",
+    icon: WebIcon,
+    color: "from-primary via-secondary to-accent",
+    technologies: ["React", "Vue", "Angular", "Next.js", "Nuxt.js"],
+  },
+  {
+    id: "backend",
+    title: "Backend/API REST",
+    description: "Desarrollo de APIs y servicios backend robustos",
+    icon: ApiIcon,
+    color: "from-secondary via-accent to-primary",
+    technologies: ["Node.js", "Python", "Java", "C#", "Go"],
+  },
+  {
+    id: "multiplataforma",
+    title: "Multiplataforma",
+    description: "Aplicaciones que funcionan en múltiples plataformas",
+    icon: MobileIcon,
+    color: "from-accent via-primary to-secondary",
+    technologies: ["React Native", "Flutter", "Ionic", "Xamarin"],
+  },
+  {
+    id: "android",
+    title: AndroidIcon,
+    description: "Aplicaciones nativas para el ecosistema Android",
+    icon: "android",
+    color: "from-green-500 via-green-600 to-green-700",
+    technologies: ["Kotlin", "Java", "Android Studio", "Jetpack Compose"],
+  },
+  {
+    id: "ios",
+    title: IosIcon,
+    description: "Aplicaciones nativas para iPhone y iPad",
+    icon: "ios",
+    color: "from-blue-500 via-blue-600 to-blue-700",
+    technologies: ["Swift", "SwiftUI", "Objective-C", "Xcode"],
+  },
+  {
+    id: "videojuegos",
+    title: GameIcon,
+    description: "Desarrollo de videojuegos para diferentes plataformas",
+    icon: "game",
+    color: "from-purple-500 via-pink-500 to-red-500",
+    technologies: ["Unity", "Unreal Engine", "Godot", "C#", "C++"],
+  },
+];
