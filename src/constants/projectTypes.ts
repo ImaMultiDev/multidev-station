@@ -5,7 +5,7 @@ export const projectTypes = [
     description: "Desarrollo de aplicaciones web modernas y responsive",
     icon: "web",
     color: "from-primary via-secondary to-accent",
-    technologies: ["React", "Vue", "Angular", "Next.js", "Nuxt.js"],
+    technologies: ["React", "Vue", "Angular", "Next.js"],
   },
   {
     id: "backend",

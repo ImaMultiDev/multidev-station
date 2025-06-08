@@ -5,8 +5,8 @@ export default function Header() {
     <header className="border-b border-border bg-surface/50 backdrop-blur-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-2">
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">MD</span>
               </div>
@@ -15,7 +15,7 @@ export default function Header() {
               </h1>
             </div>
           </div>
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden md:flex items-center gap-8">
             <Link
               href="#proyectos"
               className="text-text-muted hover:text-text transition-colors"

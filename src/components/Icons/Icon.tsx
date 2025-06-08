@@ -9,6 +9,7 @@ import ExpandIcon from "./ExpandIcon";
 import LightningIcon from "./LightningIcon";
 import ShieldIcon from "./ShieldIcon";
 import HeartIcon from "./HeartIcon";
+import RedirectIcon from "./RedirectIcon";
 
 interface IconProps {
   name: string;
@@ -27,6 +28,7 @@ const iconMap = {
   lightning: LightningIcon,
   shield: ShieldIcon,
   heart: HeartIcon,
+  redirectIcon: RedirectIcon,
 } as const;
 
 type IconName = keyof typeof iconMap;

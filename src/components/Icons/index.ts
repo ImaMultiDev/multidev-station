@@ -9,6 +9,7 @@ import ExpandIcon from "./ExpandIcon";
 import LightningIcon from "./LightningIcon";
 import ShieldIcon from "./ShieldIcon";
 import HeartIcon from "./HeartIcon";
+import RedirectIcon from "./RedirectIcon";
 
 export {
   AndroidIcon,
@@ -22,6 +23,7 @@ export {
   LightningIcon,
   ShieldIcon,
   HeartIcon,
+  RedirectIcon,
 };
 
 // Export the main Icon component

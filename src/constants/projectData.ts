@@ -165,37 +165,6 @@ export const projectsData: ProjectData[] = [
           "Aplicaciones de gran escala",
         ],
       },
-      {
-        id: "tailwindcss",
-        name: "Tailwind CSS",
-        description:
-          "Framework de CSS utility-first para crear diseños personalizados rápidamente.",
-        icon: "tailwind",
-        category: "framework",
-        difficulty: "beginner",
-        popularity: 5,
-        documentation: "https://tailwindcss.com/docs",
-        installation: [
-          "npm install -D tailwindcss",
-          "npx tailwindcss init",
-          "Configurar el archivo tailwind.config.js",
-          "Añadir directivas a tu CSS",
-        ],
-        features: [
-          "Utility-first approach",
-          "Customización completa",
-          "Responsive design integrado",
-          "Dark mode built-in",
-          "Purge automático de CSS no usado",
-        ],
-        useCases: [
-          "Desarrollo rápido de prototipos",
-          "Sistemas de diseño consistentes",
-          "Landing pages",
-          "Aplicaciones modernas",
-          "Componentes reutilizables",
-        ],
-      },
     ],
     roadmap: [
       {

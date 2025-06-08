@@ -6,8 +6,8 @@ export default function ProjectTypesGrid() {
   const [hoveredCard, setHoveredCard] = useState<string | null>(null);
 
   return (
-    <section id="proyectos" className="py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section id="proyectos">
+      <div className="max-w-7xl items-center mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Tipos de Proyectos</h2>
           <p className="text-text-muted max-w-2xl mx-auto">

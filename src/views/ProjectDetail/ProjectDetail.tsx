@@ -27,18 +27,18 @@ function TechnologyCard({ tech }: { tech: Technology }) {
   };
 
   const categoryIcons = {
-    language: "🔤",
-    framework: "🏗️",
-    library: "📚",
+    language: "LNG",
+    framework: "FW",
+    library: "LIB",
     tool: "🔧",
-    database: "🗄️",
-    platform: "🌐",
+    database: "DB",
+    platform: "PLA",
   };
 
   return (
     <div className="bg-surface border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300">
       <div className="flex items-start justify-between mb-4">
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center gap-3">
           <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white font-bold">
             <span className="text-xl">{categoryIcons[tech.category]}</span>
           </div>
@@ -188,7 +188,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
   return (
     <div className="bg-gradient-to-br from-background via-surface to-background">
       {/* Hero Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="mx-auto w-2/3 p-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center space-x-4 mb-6">
             <Link
@@ -213,7 +213,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
             <span className="text-text-muted text-sm">Tipos de Proyectos</span>
           </div>
 
-          <div className="flex items-center space-x-6 mb-8">
+          <div className="flex items-center gap-6 mb-8">
             <div
               className={`w-16 h-16 bg-gradient-to-br ${project.color} rounded-xl flex items-center justify-center text-white`}
             >
@@ -230,8 +230,8 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
           </div>
 
           {/* Tabs */}
-          <div className="border-b border-border mb-8">
-            <nav className="flex space-x-8">
+          <div className="border-b border-border">
+            <nav className="flex gap-8">
               {[
                 {
                   id: "technologies" as TabType,
@@ -270,10 +270,10 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
       </section>
 
       {/* Content */}
-      <section className="pb-16 px-4 sm:px-6 lg:px-8">
+      <section className="lg:w-2/3 lg:mx-auto pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           {activeTab === "technologies" && (
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 gap-6">
               {detailedProject.technologies.map((tech) => (
                 <TechnologyCard key={tech.id} tech={tech} />
               ))}

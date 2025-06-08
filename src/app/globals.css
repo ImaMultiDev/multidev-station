@@ -82,15 +82,11 @@
   }
 }
 
-/* Base styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Base styles - FIXED CENTERING */
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 body {
@@ -100,6 +96,18 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Ensure all containers are properly centered */
+.container,
+.max-w-7xl,
+.max-w-6xl,
+.max-w-4xl {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100%;
 }
 
 /* Animation keyframes */

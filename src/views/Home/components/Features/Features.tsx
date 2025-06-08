@@ -26,8 +26,8 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-surface/30">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-surface/30 w-full">
+      <div className="max-w-7xl mx-auto w-full">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">
             ¿Por qué Multidev Station?
@@ -38,7 +38,7 @@ export default function Features() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
           {features.map((feature, index) => (
             <FeatureCard key={index} feature={feature} />
           ))}

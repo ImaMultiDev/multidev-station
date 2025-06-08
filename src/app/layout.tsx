@@ -67,9 +67,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-[family-name:var(--font-geist-sans)] antialiased`}
       >
-        <div className="min-h-screen bg-background text-text flex flex-col">
+        <div className="bg-background text-text flex flex-col">
           <Header />
-          <main className="flex-1">{children}</main>
+          <main className="w-full max-w-none">{children}</main>
           <Footer />
         </div>
       </body>
