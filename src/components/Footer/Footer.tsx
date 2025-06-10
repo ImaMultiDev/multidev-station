@@ -1,7 +1,7 @@
 import Link from "next/link";
 import GithubIcon from "../Icons/GithubIcon";
-import PinterestIcon from "../Icons/PinterestIcon";
-import TwitterIcon from "../Icons/TwitterIcon";
+import { InstagramIcon, PortfolioIcon } from "../Icons";
+import LinkedinIcon from "../Icons/LinkedinIcon";
 
 export default function Footer() {
   return (
@@ -9,12 +9,15 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">MD</span>
+            <Link href="/">
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">MD</span>
+                </div>
+                <span className="text-lg font-bold">Multidev Station</span>
               </div>
-              <span className="text-lg font-bold">Multidev Station</span>
-            </div>
+            </Link>
+
             <p className="text-text-muted max-w-md">
               Tu central de desarrollo. Explora, aprende y crea proyectos
               increíbles con las mejores tecnologías del mercado.
@@ -64,15 +67,15 @@ export default function Footer() {
             <ul className="space-y-2 text-text-muted text-sm">
               <li>
                 <Link
-                  href="/tecnologias"
+                  href="/#proyectos"
                   className="hover:text-primary transition-colors"
                 >
-                  Tecnologías
+                  Proyectos
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/frameworks"
+                  href="/framework"
                   className="hover:text-primary transition-colors"
                 >
                   Frameworks
@@ -80,18 +83,18 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/herramientas"
-                  className="hover:text-primary transition-colors"
+                  href="/framework/react"
+                  className="text-gray-300 hover:text-primary transition-colors"
                 >
-                  Herramientas
+                  React 🌐
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/guias"
-                  className="hover:text-primary transition-colors"
+                  href="/framework/nextjs"
+                  className="text-gray-300 hover:text-primary transition-colors"
                 >
-                  Guías
+                  Next.js 🌐
                 </Link>
               </li>
             </ul>
@@ -103,24 +106,38 @@ export default function Footer() {
             © 2025 Multidev Station. Desarrollado con ❤️ para la comunidad de
             desarrolladores.
           </p>
-          <div className="flex space-x-4 mt-4 md:mt-0">
+          <div className="flex gap-4 mt-4 md:mt-0">
             <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://imamultidev.dev/"
+              className="text-text-muted hover:text-primary transition-colors"
+            >
+              <PortfolioIcon />
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://github.com/ImaMultiDev"
               className="text-text-muted hover:text-primary transition-colors"
             >
-              <TwitterIcon />
-            </a>
-            <a
-              href="#"
-              className="text-text-muted hover:text-primary transition-colors"
-            >
-              <PinterestIcon />
-            </a>
-            <a
-              href="#"
-              className="text-text-muted hover:text-primary transition-colors"
-            >
               <GithubIcon />
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/imanol-mugueta-unsain/"
+              className="text-text-muted hover:text-primary transition-colors pl-1"
+            >
+              <LinkedinIcon />
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/ima_munsa/"
+              className="text-text-muted hover:text-primary transition-colors"
+            >
+              <InstagramIcon />
             </a>
           </div>
         </div>

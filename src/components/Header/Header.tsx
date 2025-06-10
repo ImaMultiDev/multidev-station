@@ -6,27 +6,32 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">MD</span>
+            <Link href="/">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">MD</span>
+                </div>
+                <h1 className="text-xl font-bold text-gradient">
+                  Multidev Station
+                </h1>
               </div>
-              <h1 className="text-xl font-bold text-gradient">
-                Multidev Station
-              </h1>
-            </div>
+            </Link>
           </div>
+          <p className="pl-12 font-bold hover:font-extrabold text-red-500">
+            🚧 Proyecto en Desarrollo🚧
+          </p>
           <nav className="hidden md:flex items-center gap-8">
             <Link
-              href="#proyectos"
+              href="/#proyectos"
               className="text-text-muted hover:text-text transition-colors"
             >
               Proyectos
             </Link>
             <Link
-              href="#tecnologias"
+              href="/framework"
               className="text-text-muted hover:text-text transition-colors"
             >
-              Tecnologías
+              Frameworks
             </Link>
             <Link
               href="#recursos"

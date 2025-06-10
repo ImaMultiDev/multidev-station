@@ -1,4 +1,12 @@
+import { useRouter } from "next/navigation";
+
 export default function Hero() {
+  const router = useRouter();
+
+  const redirectToFramework = () => {
+    router.push("/framework");
+  };
+
   return (
     <section className="w-screen px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto text-center">
@@ -23,8 +31,11 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in"
             style={{ animationDelay: "0.4s" }}
           >
-            <button className="px-10 py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-xl font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 transform min-w-[200px]">
-              Explorar Proyectos
+            <button
+              onClick={redirectToFramework}
+              className="px-10 py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-xl font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 transform min-w-[200px]"
+            >
+              Explorar Frameworks
             </button>
             <button className="px-10 py-4 border-2 border-border text-text hover:bg-surface hover:border-primary rounded-xl font-semibold text-lg transition-all duration-300 min-w-[200px]">
               Ver Documentación

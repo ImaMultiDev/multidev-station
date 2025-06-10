@@ -98,9 +98,9 @@ export const projectsData: ProjectData[] = [
         useCases: [
           "Sitios web corporativos",
           "E-commerce de alto rendimiento",
-          "Blogs y CMS",
+          "CMS",
           "Aplicaciones full-stack",
-          "Landing pages optimizadas para SEO",
+          "Landing pages",
         ],
       },
       {
@@ -1633,7 +1633,7 @@ export const projectsData: ProjectData[] = [
       },
       {
         title: "itch.io",
-        type: "platform",
+        type: "documentation",
         url: "https://itch.io/",
         description: "Plataforma para publicar y distribuir juegos indie",
         free: true,

@@ -21,10 +21,10 @@ export default function NotFound() {
                 />
               </svg>
             </div>
-            <h1 className="text-4xl font-bold mb-4">Proyecto no encontrado</h1>
+            <h1 className="text-4xl font-bold mb-4">Framework no encontrado</h1>
             <p className="text-text-muted text-lg mb-8 max-w-md mx-auto">
-              Lo sentimos, el proyecto que buscas no existe o ha sido movido. Te
-              invitamos a explorar nuestros otros tipos de proyectos.
+              Lo sentimos, el framework que buscas no existe o ha sido movido.
+              Te invitamos a explorar otros frameworks.
             </p>
           </div>
 
@@ -49,10 +49,10 @@ export default function NotFound() {
               Ir al inicio
             </Link>
             <Link
-              href="/#proyectos"
+              href="/#frameworks"
               className="inline-flex items-center px-6 py-3 border border-border text-text hover:bg-surface rounded-lg font-medium transition-all duration-300"
             >
-              Ver todos los proyectos
+              Ver todos los frameworks
             </Link>
           </div>
         </div>
